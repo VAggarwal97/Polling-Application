@@ -1,0 +1,77 @@
+.polls {
+	border-top: 1px solid #eee;
+	display: block;
+	margin: 20px auto;
+	padding: 20px 0 40px 0;
+	width: 60%;
+}
+.delete2 {
+ 	background: #ff7a7f;
+ 	border: 1px solid #ff7a7f;
+ 	border-radius: 50%;
+ 	color: white;
+ 	font-size: 1em;
+ 	font-weight: 600;
+ 	margin-left: 5px;
+ 	opacity: 0;
+ 	padding: 2px 7px;
+ 	position: absolute;
+ 	top: -12%;
+ 	right: -3%;
+ 	transition: all 0.3s ease-out;
+ 	width: 26px;
+}
+.delete2:hover {
+ 	animation: delSpin 0.4s ease;
+ 	background: #ff4a4f;
+ 	border: 1px solid white;
+}
+.search-results-box:hover .delete2 {
+ 	opacity: 1;
+}
+@keyframes delSpin {
+ 	from { transform: rotate(0deg); }
+ 	to { transform: rotate(360deg); }
+}
+
+.pollBox {
+	background: white;
+	order-top: 1px solid #e5effe;
+	border-bottom: 1px solid #e5effe;
+	display: inline-block;
+	font-family: raleway;
+	padding: 7px 0px 3px 0px;
+	position: relative;
+	width: 80%;
+}
+.myPollContent {
+	color: black;
+	display: inline;
+	text-decoration: none;
+}
+.pollQuestion {
+	font-weight: 600;
+	letter-spacing: 1px;
+	position: absolute;
+	left: 3%;
+}
+.pollVotes {
+	color: #999;
+	letter-spacing: 2px;
+	font-weight: 500;
+	font-size: 20px;
+}
+.creator {
+	position: absolute;
+	right: 3%;
+	font-style: oblique;
+}
+h1.container {
+	padding-top: 8vh;
+}
+
+@media (max-width: 767px) {
+	.polls {
+		width: 92%;
+	}
+}

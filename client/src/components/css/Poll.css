@@ -1,0 +1,75 @@
+.center-container {
+	box-shadow: 0px 0px 10px 1px silver;
+	background: #d8ecf3;
+	display: inline-flex;
+	margin: 20px auto;
+	padding: 16px;
+	position: relative;
+	width: 88%;
+	max-width: 900px;
+}
+.choices {
+	width: 49%;
+}
+.choice {
+	background: white;
+	border: 1px solid #eee9de;
+	border-radius: 4px;
+	order-bottom: 1px solid #eee;
+	display: table;
+	letter-spacing: 1px;
+	margin: 0 auto;
+	padding: 5px;
+	width: 92%;
+	transition: all 0.3s ease-out;
+}
+.choice:hover {
+	border: 1px solid lightblue;
+}
+.chartContainer {
+	position: relative;
+	width: 49%;
+}
+#myChart {
+}
+.desc {
+	border-radius: 2px;
+	box-shadow: 0px 0px 10px 1px silver;
+	background: #d8ecf3;
+	margin: 0px auto;
+	padding: 5px 5px;
+	position: relative;
+	text-align: center;
+	width: 88%;
+	max-width: 900px;
+}
+.poll-link {
+	background: white;
+	border: 1px solid #555;
+	border-radius: 2px;
+	display: inline-flex;
+	margin: 5px;
+	padding: 2px 6px;
+	word-break: break-all;
+}
+
+@media (max-width: 767px) {
+	.center-container {
+		display: inline-block;
+		padding: 5px;
+		idth: 88%;
+	}
+	.choices {
+		width: 100%;
+	}
+	.chartContainer {
+		border-top: 1px solid white;
+		margin-top: 9px;
+		padding-top: 5px;
+		width: 100%;
+	}
+	.desc {
+		font-size: 14px;
+		idth: 88%;
+	}
+}

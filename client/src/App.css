@@ -1,0 +1,142 @@
+/*>>>*/
+.App {
+  text-align: center;
+}
+
+
+.tbd {
+  background: linear-gradient(#667, #323);
+  color: rgb(255, 255, 255, 0.9);;
+  font-family: lato, sans-serif;
+  font-size: 1.2em;
+  letter-spacing: 1px;
+  padding: 6px 0px;
+  text-align: center;
+}
+  .tbd-container {
+    position: relative;
+    left: auto;
+    right: auto;
+  }
+  .fa-arrow-circle-right {
+    color:  rgb(242, 145, 2, 1);
+    margin: auto 1.5vw;
+  }
+
+.main {
+  background: linear-gradient(rgb(255, 255, 245, 1), white);
+  min-height: 63vh;  /*mit header(guide): 570px;*/
+  padding: 8vh 0;
+  position: relative;
+}
+
+
+h1 {
+  font-family: raleway, sans-serif;
+  margin: 0;
+  padding: 15px;
+}
+.btn {
+  background: white;
+  border: 1px solid lightblue;
+  border-radius: 4px;
+  font-family: raleway, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin: 5px;
+  padding: 5px 10px;
+  transition: all 0.3s ease-out;
+}
+.btn:hover {
+  background: lightblue;
+  border: 1px solid white;
+  color: white;
+}
+.danger {
+  border: 1px solid red;
+}
+.danger:hover {
+  background: red;
+  border: 1px solid white;
+  color: white;
+}
+.delete {
+  background: #ff7a7f;
+  border: 1px solid #ff7a7f;
+  border-radius: 50%;
+  color: white;
+  display: inline;
+  font-size: 1em;
+  font-weight: 600;
+  margin-left: 5px;
+  padding: 2px 7px;
+  transition: all 0.5s ease;
+  width: 26px;
+}
+.delete:hover {
+  animation: delSpin 0.4s ease;
+  background: #ff4a4f;
+  border: 1px solid white;
+}
+@keyframes delSpin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+input:hover {
+  box-shadow: inset 0px 0px 6px 1px #eee;
+}
+button {
+  cursor: pointer;
+}
+h3 {
+  text-transform: uppercase;
+}
+
+@media (max-width: 900px) {
+  nav {
+    height: 60px;
+    margin-top: 56px;
+  }
+  .logo {
+    margin: 8px 2vw;
+  }
+  .welcome-box {
+    margin: 18px 1vw;
+  }
+  .nav-ul {
+    display: none;
+  }
+  .mobile-navbar {
+    display: inline;
+  }
+  .login-button {
+    margin: 17px 2vw;
+    padding: 3px 4px;
+  }
+  .fa-facebook-square {
+    margin-right: 4px;
+  }
+  .tbd {
+    font-size: 1em;
+  }
+  h1 {
+    font-size: 26px;
+    padding: 1vh;
+  }
+}
+@media (max-width: 530px) {
+  
+  .welcome {
+    display: none;
+  }
+  .login-button:hover {
+    box-shadow: 0px 0px 10px 1px silver;
+  }
+}
